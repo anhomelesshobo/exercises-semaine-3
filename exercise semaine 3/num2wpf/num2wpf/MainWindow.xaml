@@ -30,7 +30,6 @@
                     <TextBlock Text="un paquet de boutons radio" Height="26"/>
 
                 </StackPanel>
-
             </GroupBox.Header>
             <StackPanel  Margin="6,23" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                 <RadioButton x:Name="RadioButton3" Content="Tu peux me sélectionner" Height="30" RenderTransformOrigin="0.505,-1.055"/>
