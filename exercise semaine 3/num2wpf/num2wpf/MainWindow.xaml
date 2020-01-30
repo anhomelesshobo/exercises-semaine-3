@@ -1,0 +1,41 @@
+﻿<Window  x:Class="num2wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:num2wpf"
+        mc:Ignorable="d"
+        Title="Headered Content control" Height="450" Width="800">
+    <Grid Height="421">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Expander  FontSize="20" Header="Un paquet de boutons radio" Margin="250,33,250,68">
+            <StackPanel  Margin="6" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                <RadioButton x:Name="RadioButton1" Content="Tu peux me sélectionner" Height="30"/>
+                <RadioButton x:Name="RadioButton2" Content="Ou moi" Height="30"/>
+            </StackPanel>
+        </Expander>
+
+        <GroupBox  FontSize="20" Margin="247,4,253,66" Grid.Column="0" Grid.Row="1">
+            <GroupBox.Header >
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Margin="0 0 6 0" Fill="Red" Width="15" Height="15"/>
+                    <TextBlock Text="un paquet de boutons radio" Height="26"/>
+
+                </StackPanel>
+
+            </GroupBox.Header>
+            <StackPanel  Margin="6,23" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                <RadioButton x:Name="RadioButton3" Content="Tu peux me sélectionner" Height="30" RenderTransformOrigin="0.505,-1.055"/>
+                <RadioButton x:Name="RadioButton4" Content="Ou moi" Height="30" Checked="RadioButton4_Checked"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
